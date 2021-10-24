@@ -15,7 +15,7 @@ import net.minecraftforge.fml.common.Mod.EventBusSubscriber;
 public class ModEventHandler {
 
 	@SubscribeEvent
-	public static void headBump(final PlayerInteractEvent.RightClickItem event) {
+	public static void equipArmor(final PlayerInteractEvent.RightClickItem event) {
 		ItemStack stack = event.getItemStack();
 		Item item = stack.getItem();
 		if (!(item instanceof ArmorItem)) return;
